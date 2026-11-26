@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int main() {
+    char email[100];
+    char password[100];
+
+    printf("Enter Gmail ID: ");
+    scanf("%s", email);
+
+    printf("Enter password: ");
+    scanf("%s", password);
+
+    if (email[0] != '\0' && password[0] != '\0') {
+        printf("Login successful!\n");
+    }
+    else {
+        printf("Login failed!\n");
+    }
+
+    return 0;
+}
